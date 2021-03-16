@@ -1,0 +1,42 @@
+@import url('/style/colors.css');
+
+/* Elementos Básicos */
+body {
+    background-color: var(--color-preta);
+    font-family: 'Permanent Marker', Times, serif;
+    padding: 1vw 1vh;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--color-vermelha);
+}
+
+header .logo {
+    color: var(--color-vermelha);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+}
+
+.container {
+    margin: 1% 1%;
+}

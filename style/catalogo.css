@@ -1,0 +1,44 @@
+@import url('/style/colors.css');
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("/img/mask.jpg");
+    background-position-y: -250px;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 120px;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.botao {
+    line-height: 20px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    z-index: 999;
+    font-weight: bold;
+    color: var(--color-vermelha);
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+}
+
+.botao:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+i.fas {
+    margin-right: 1vw;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
