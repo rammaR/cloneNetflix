@@ -1,0 +1,10 @@
+.carrosel-filmes {
+    position: relative;
+    margin-top: 5px;
+}
+
+.item {
+    cursor: pointer;
+    width: 100%;
+    height: 600px;
+}

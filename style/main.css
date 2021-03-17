@@ -1,6 +1,6 @@
 @import url('/style/colors.css');
-
 /* Elementos Básicos */
+
 body {
     background-color: var(--color-preta);
     font-family: 'Permanent Marker', Times, serif;
@@ -14,7 +14,15 @@ body {
     box-sizing: border-box;
 }
 
-header .container{
+header{
+    margin-bottom: 0px;
+}
+
+header .container {
+    position: static;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +35,7 @@ header nav a {
     margin-right: 10px;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: var(--color-vermelha);
 }
 
@@ -35,6 +43,11 @@ header .logo {
     color: var(--color-vermelha);
     font-family: 'Arial Black', Times, serif;
     font-size: 40px;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .container {
