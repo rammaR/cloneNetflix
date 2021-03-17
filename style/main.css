@@ -4,7 +4,6 @@
 body {
     background-color: var(--color-preta);
     font-family: 'Permanent Marker', Times, serif;
-    padding: 1vw 1vh;
     color: #fff;
 }
 
@@ -50,6 +49,21 @@ main {
     min-height: 100%;
 }
 
+.catalogo{
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
 .container {
     margin: 1% 1%;
+}
+
+footer{
+    background-color: #000;
+    height: 10vh;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 3vh;
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
 }
