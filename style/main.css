@@ -67,3 +67,7 @@ footer{
     padding-top: 3vh;
     font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
 }
+
+h2.logo{
+    cursor: pointer;
+}

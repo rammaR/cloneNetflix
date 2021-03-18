@@ -53,7 +53,7 @@ function pauseVideo() {
 setTimeout(function () {
     if (video) {
         video.pause();
-        //playVideo();
+        playVideo();
         hideDescription();
     }
 }, 1500);
@@ -62,7 +62,12 @@ document.addEventListener('scroll', function (e) {
     //console.log(window.scrollY);
     if (window.scrollY >= 800) {
         video.load();
+        video.pause();
     }
+});
+
+$('.filme-principal').on('click', function(){
+    playVideo();
 })
 //
 
@@ -108,26 +113,33 @@ var series = [
     },
     {
         poster: "/img/demolidor.jpg",
+        title: 'Aquela cena massa de Demolidor',
         src: "/src/demolidor.mp4"
     }, {
         poster: "/img/pokemon.jpg",
+        title: 'As melhores partes de 999 anos de Pokemon',
         src: "/src/pokemon.mp4"
     }, {
         poster: "/img/cafe.png",
+        title: 'Quero caféeeeeeeee',
         src: "/src/cafe.mp4"
     }];
 
 var filmes = [{
     poster: "/img/starwars.jpg",
+    title: 'Memes clássicos de um filme clássico',
     src: "/src/starwars.mp4"
 }, {
     poster: "/img/hobbit.jpg",
+    title: 'A sociedade dos memes',
     src: "/src/hobbit.mp4"
 }, {
     poster: "/img/guerracivil.jpg",
+    title: 'Se a guerra civil se passasse no Brasil',
     src: "/src/guerracivil.mp4"
 }, {
     poster: "/img/troia.jpg",
+    title: 'O abestado de Tróia',
     src: "/src/troia.mp4"
 }]
 
